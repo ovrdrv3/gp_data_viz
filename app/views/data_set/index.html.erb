@@ -1,0 +1,22 @@
+  <div class="container">
+    <br>
+    <div id="app">
+
+      <h4 v-if="selected">Showing: {{ selected }}</h4>
+      <h4 v-else>Choose a breakdown</h4>
+      <select class="form-select" v-model="selected" @change="recreateChart(sd)">
+        <option v-for="option in options" v-bind:value="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <br>
+    <canvas id="myChart" width="600" height="600"></canvas>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4><a href="/loadcsv">load csv</a></h4>
+    <h4><a href="/deletecsv">delete csv</a></h4>
+  </div>
