@@ -1,7 +1,6 @@
   <div class="container">
     <br>
-    <div id="app">
-
+    <div id="app" v-cloak>
       <h4 v-if="selected">Showing: {{ selected }}</h4>
       <h4 v-else>Choose a breakdown</h4>
       <select class="form-select" v-model="selected" @change="recreateChart(sd)">

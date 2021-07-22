@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    width: 600px;
+}
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "Loading…" }
